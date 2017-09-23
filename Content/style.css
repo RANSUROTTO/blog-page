@@ -2,18 +2,55 @@
 .blog-header {
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
+    height: 40px;
+    line-height: 40px;
 }
 
-.blog-header .blog-nav {
-    display: block;
+
+/*
+ * >=0px
+ * <=1024px
+ */
+
+@media screen and (min-width:0px) and (max-width:1024px) {
+    .blog-header .blog-header-container .am-show-sm-only {
+        display: inherit !important;
+    }
 }
 
-.blog-header .blog-nav li {
+
+/*
+    >=1025px
+*/
+
+@media screen and (min-width:1025px) {
+    .blog-header .blog-header-container {
+        max-width: 80%;
+    }
+    .blog-header .blog-header-container .blog-header-container-nav {
+        display: block;
+    }
+}
+
+/*
+    Global
+*/
+
+.blog-header .blog-header-container .blog-header-container-nav li {
     border: width border-style color;
-    color: rgba(255, 255, 255, 0.7);
-    padding: 0 15px;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0 10px;
     cursor: pointer;
 }
-.blog-header .blog-nav li:hover{
-    background: rgba(0, 0, 0, 0.2);
+
+.blog-header .blog-header-container .blog-header-container-nav li:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.blog-banner {
+    height: 650px;
+    /* background-image: url('../Images/header.jpg'); */
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
 }

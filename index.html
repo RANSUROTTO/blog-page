@@ -29,6 +29,7 @@
 		<!-- styles begin -->
 		<link rel="stylesheet" href="Assets/amazeui-2.7.2/css/amazeui.css">
 		<link rel="stylesheet" href="Assets/layui-2.1.4/css/layui.css">
+		<link rel="stylesheet" href="Assets/font awesome-4.7/css/font-awesome.css">
 
 		<link rel="stylesheet" href="Content/style.css">
 		<!-- styles end -->
@@ -37,20 +38,34 @@
 	<body>
 
 		<header class="am-header blog-header">
-			<div class="am-container">
+			<div class="am-container blog-header-container">
 				<nav>
-					<ul class="blog-nav am-nav am-nav-pills am-collapse">
-						<li>首页</li>
-						<li>实验室</li>
-						<li>栏目 Number.1</li>
-						<li>栏目 Number.2</li>
-						<li>栏目 Number.3</li>
-						<li>栏目 Number.4</li>
-						<li>栏目 Number.5</li>
+					<ul class="blog-header-container-nav am-nav am-nav-pills am-collapse">
+						<li>
+							<i class="fa fa-home"></i>首页
+						</li>
+						<li>
+							<i class="fa fa-paperclip"></i>分类
+						</li>
+						<li>
+							<i class="fa fa-music"></i>音乐
+						</li>
+						<li>
+							<i class="fa fa-flask"></i>实验室
+						</li>
+						<li>
+							<i class="fa fa-pencil"></i>留言板
+						</li>
+						<li>
+							<i class="fa fa-home"></i>栏目 Number.4
+						</li>
+						<li>
+							<i class="fa fa-home"></i>栏目 Number.5
+						</li>
 					</ul>
 				</nav>
 
-				<button class="am-btn am-show-sm-only" data-am-collapse="{target: '.am-nav'}">
+				<button class="am-btn am-show-sm-only" data-am-collapse="{target: '.blog-header-container-nav'}">
 						<span class="am-sr-only">导航切换</span>
 						<span class="am-icon-bars"></span>
 				</button>
@@ -58,9 +73,10 @@
 			</div>
 		</header>
 
-		<div style="background-image: url('Images/header.jpg'); background-position: center; background-repeat: no-repeat; height:600px;">
+		<div class="blog-banner">
 
 		</div>
+
 
 
 		<footer>
