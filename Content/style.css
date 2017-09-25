@@ -55,3 +55,21 @@
     background-position: center 0;
     background-repeat: no-repeat;
 }
+
+.blog-nav {
+	position: relative;
+}
+
+.blog-nav li {
+	margin: 0 !important;
+}
+
+li.nav-special{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 61px;
+	height: 40px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
