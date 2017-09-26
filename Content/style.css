@@ -37,11 +37,26 @@
     Global
 */
 
+.blog-header .blog-container .blog-nav {
+    position: relative;
+}
+
 .blog-header .blog-container .blog-nav li {
     border: width border-style color;
     color: rgba(255, 255, 255, 0.9);
     padding: 0 10px;
     cursor: pointer;
+    margin: 0 !important;
+}
+
+.blog-header .blog-container .blog-nav li.nav-special {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 61px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .blog-header .blog-container .blog-nav li:hover {
@@ -54,22 +69,4 @@
     background-size: cover;
     background-position: center 0;
     background-repeat: no-repeat;
-}
-
-.blog-nav {
-	position: relative;
-}
-
-.blog-nav li {
-	margin: 0 !important;
-}
-
-li.nav-special{
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	width: 61px;
-	height: 40px;
-	background-color: rgba(0, 0, 0, 0.5);
 }
