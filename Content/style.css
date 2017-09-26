@@ -66,7 +66,22 @@
 .blog-banner {
     height: 650px;
     /* background-image: url('../Images/header.jpg'); */
+    background-color: black;
     background-size: cover;
     background-position: center 0;
     background-repeat: no-repeat;
+}
+
+.blog-banner .blog-title {
+    z-index: 1;
+    text-shadow: 0 1px 1px #47456d;
+    position: relative;
+     top: 30px;
+}
+
+.blog-banner .blog-title a {
+    color: #fff;
+    font-weight: 300;
+    font-size: 6.8rem;
+    font-family: "kilsonburg", "Avenir Next", Helvetica, Arial, "Lantinghei SC", "Microsoft YaHei", sans-serif;
 }
