@@ -5,80 +5,90 @@
 */
 
 .blog-header {
-	position: fixed;
-	z-index: 1;
-	height: 40px;
-	line-height: 40px;
-	background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 2;
+    height: 40px;
+    line-height: 40px;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .blog-header .blog-container .blog-nav {
-	position: relative;
+    position: relative;
 }
 
 .blog-header .blog-container .blog-nav li {
-	margin: 0 !important;
-	padding: 0 10px;
-	border: width border-style color;
-	color: rgba(255, 255, 255, 0.9);
-	cursor: pointer;
+    margin: 0 !important;
+    padding: 0 10px;
+    border: width border-style color;
+    color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
 }
 
 .blog-header .blog-container .blog-nav li.nav-special {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	width: 61px;
-	height: 40px;
-	background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 61px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .blog-header .blog-container .blog-nav li:hover {
-	background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .blog-banner {
-	height: 650px;
-	background-image: url('../Images/header.jpg');
-	background-size: cover;
-	background-position: center 0;
-	background-repeat: no-repeat;
+    height: 650px;
+    background-image: url('../Images/header.jpg');
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
 }
 
 .blog-banner .blog-title {
-	position: relative;
-	top: 180px;
-	text-shadow: 0 1px 1px #47456d;
+    position: relative;
+    top: 180px;
+    text-shadow: 0 1px 1px #47456d;
 }
 
 .blog-banner .blog-title a {
-	font-weight: 300;
-	font-size: 6.8rem;
-	font-family: "kilsonburg", "Avenir Next", Helvetica, Arial, "Lantinghei SC", "Microsoft YaHei", sans-serif;
-	color: #fff;
+    font-weight: 300;
+    font-size: 6.8rem;
+    font-family: "kilsonburg", "Avenir Next", Helvetica, Arial, "Lantinghei SC", "Microsoft YaHei", sans-serif;
+    color: #fff;
 }
 
-.blog-body {
-	width: 80%;
-	min-width: 1024px;
-	height: 500px;
-	margin: 10px auto;
+.blog-content {
+    width: 100%;
+}
+
+.blog-content .blog-body {
+    width: 85%;
+    min-width: 1024px;
+    height: 500px;
+    margin: 10px auto;
+}
+
+.blog-content .blog-body div {
+    height: 200px;
+    border: 1px solid black;
 }
 
 .blog-footer .blog-footer-image {
-	position: absolute;
-	height: 360px;
-	background-image: url('../Images/footer.png');
-	background-position: center;
-	background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    height: 360px;
+    background-image: url('../Images/footer.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .blog-footer .blog-container {
-	position: relative;
-	top: 290px;
-	height: 200px;
-	background-color: rgba(35, 35, 35, 1);
+    position: relative;
+    top: 290px;
+    height: 200px;
+    background-color: rgba(35, 35, 35, 1);
 }
 
 
@@ -88,15 +98,15 @@
  */
 
 @media screen and (min-width:0px) and (max-width:640px) {
-	.blog-banner {
-		height: 300px;
-	}
-	.blog-banner .blog-title {
-		top: 100px;
-	}
-	.blog-banner .blog-title a {
-		font-size: 3rem;
-	}
+    .blog-banner {
+        height: 300px;
+    }
+    .blog-banner .blog-title {
+        top: 100px;
+    }
+    .blog-banner .blog-title a {
+        font-size: 3rem;
+    }
 }
 
 
@@ -106,12 +116,12 @@
  */
 
 @media screen and (min-width:641px) and (max-width:1024px) {
-	.blog-banner {
-		height: 500px;
-	}
-	.blog-banner .blog-title a {
-		font-size: 6rem;
-	}
+    .blog-banner {
+        height: 500px;
+    }
+    .blog-banner .blog-title a {
+        font-size: 6rem;
+    }
 }
 
 
@@ -121,9 +131,12 @@
  */
 
 @media screen and (min-width:0px) and (max-width:1024px) {
-	.blog-header .blog-container .am-show-sm-only {
-		display: inherit !important;
-	}
+    .blog-header .blog-container .am-show-sm-only {
+        display: inherit !important;
+    }
+    .blog-content .blog-body {
+        min-width: 100%;
+    }
 }
 
 
@@ -132,10 +145,10 @@
 */
 
 @media screen and (min-width:1025px) {
-	.blog-header .blog-container {
-		max-width: 80%;
-	}
-	.blog-header .blog-container .blog-nav {
-		display: block;
-	}
+    .blog-header .blog-container {
+        max-width: 80%;
+    }
+    .blog-header .blog-container .blog-nav {
+        display: block;
+    }
 }
