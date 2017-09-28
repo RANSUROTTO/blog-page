@@ -4,6 +4,10 @@
     Global
 */
 
+body {
+    background-color: rgba(246, 246, 246, 1)
+}
+
 .blog-header {
     position: fixed;
     z-index: 2;
@@ -59,20 +63,17 @@
     color: #fff;
 }
 
-.blog-content {
-    width: 100%;
-}
-
 .blog-content .blog-body {
     width: 85%;
     min-width: 1024px;
-    height: 500px;
     margin: 10px auto;
 }
 
-.blog-content .blog-body div {
-    height: 200px;
-    border: 1px solid black;
+.blog-content .blog-body .blog-main .blog-article-list,
+.blog-content .blog-body .blog-sidebar .blog-siderbar-list {
+    background: #fff;
+    height: 1000px;
+    border-radius: 1%;
 }
 
 .blog-footer .blog-footer-image {
