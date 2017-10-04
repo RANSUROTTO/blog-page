@@ -87,13 +87,13 @@ body {
 
 .blog-content .blog-body .blog-main .blog-article-list,
 .blog-content .blog-body .blog-sidebar .blog-siderbar-list {
-    height: 1000px;
+    min-height: 1000px;
 }
 
 .blog-content .blog-body .blog-main .blog-article-list .blog-article-item,
 .blog-content .blog-body .blog-sidebar .blog-siderbar-list .blog-siderbar-item {
-    border-radius: 2%;
-    height: 200px;
+    border-radius: 5px;
+    min-height: 200px;
     background: #fff;
     padding: 15px;
 }
