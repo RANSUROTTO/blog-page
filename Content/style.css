@@ -8,6 +8,9 @@ body {
     background-color: rgba(246, 246, 246, 1)
 }
 
+
+/* header */
+
 .blog-header {
     position: fixed;
     z-index: 2;
@@ -73,6 +76,9 @@ body {
     color: #fff;
 }
 
+
+/* body */
+
 .blog-content .blog-body {
     width: 85%;
     min-width: 1024px;
@@ -81,10 +87,33 @@ body {
 
 .blog-content .blog-body .blog-main .blog-article-list,
 .blog-content .blog-body .blog-sidebar .blog-siderbar-list {
-    background: #fff;
     height: 1000px;
-    border-radius: 1%;
 }
+
+.blog-content .blog-body .blog-main .blog-article-list .blog-article-item,
+.blog-content .blog-body .blog-sidebar .blog-siderbar-list .blog-siderbar-item {
+    border-radius: 2%;
+    height: 200px;
+    background: #fff;
+    padding: 15px;
+}
+
+
+/* Article */
+
+.blog-content .blog-body .blog-main .blog-article-list .blog-article-item p {
+    margin: 10px 0;
+}
+
+.blog-content .blog-body .blog-main .blog-article-list .blog-article-item header .title {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    max-height: 100%;
+}
+
+
+/* Footer */
 
 .blog-footer .blog-footer-image {
     position: absolute;
