@@ -5,7 +5,7 @@
 */
 
 body {
-    background-color: rgba(246, 246, 246, 1)
+    background-color: rgba(239, 239, 239, 1)
 }
 
 
@@ -102,14 +102,22 @@ body {
 /* Article */
 
 .blog-content .blog-body .blog-main .blog-article-list .blog-article-item p {
+    font-size: 1.5rem;
     margin: 10px 0;
 }
 
-.blog-content .blog-body .blog-main .blog-article-list .blog-article-item header .title {
-    font-size: 25px;
-    font-weight: 700;
+.blog-content .blog-body .blog-main .blog-article-list .blog-article-item .title {
+    font-size: 2.5rem;
+    font-weight: normal;
+    display: block;
+    color: inherit;
     text-align: center;
     max-height: 100%;
+}
+
+.blog-content .blog-body .blog-main .blog-article-list .blog-article-item .blog-article-content img {
+    width: 100%;
+    border-radius: 5px;
 }
 
 
