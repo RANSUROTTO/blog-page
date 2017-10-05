@@ -101,6 +101,16 @@ body {
 
 /* Article */
 
+.blog-content .blog-body .blog-main .blog-article-list .blog-article-item .publish-date {
+    position: absolute;
+    top: -20px;
+    left: -35px;
+    height: 60px;
+    width: 70px;
+    padding-top: 10px;
+    border-radius: 100px;
+}
+
 .blog-content .blog-body .blog-main .blog-article-list .blog-article-item p {
     font-size: 1.5rem;
     margin: 10px 0;
