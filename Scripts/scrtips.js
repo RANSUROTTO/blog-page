@@ -1,42 +1,51 @@
-//var device = layui.device();
-//document.write(JSON.stringify(device));
-;!function(window){
-	var indexs = {
-		getX : function(obj){
-			var parObj=obj;
-			var left=obj.offsetLeft;
-			while(parObj=parObj.offsetParent){
-				left+=parObj.offsetLeft;
-			}
-			return left;
+/* nav script */ ;
+! function () {
+	// grab an element
+	var navElement = document.querySelector(".blog-header");
+	console.log(navElement);
+	// construct an instance of Headroom, passing the element
+	var headroom = new Headroom(navElement, {
+		// vertical offset in px before element is first unpinned
+		offset: 0,
+		// scroll tolerance in px before state changes
+		tolerance: 0,
+		// or you can specify tolerance individually for up/down scroll
+		tolerance: {
+			up: 5,
+			down: 0
 		},
-		bindEvent : function(){
-			$(".blog-nav").on("mousemove",function(e){
-				var lefts = indexs.getX(this);
-				var liwidth = $(e.target).width() + parseInt($(e.target).css("padding-left"))*2;
-				var nums = event.clientX - lefts + document.documentElement.scrollLeft - liwidth/2 - 10;
-				var liwidths = 0;
-
-				for(var i = 0;i < $(this).find(".fa").length;i++){
-					liwidths += $(".blog-nav li").eq(i).width();
-				}
-				if(nums < 0){
-					nums = 0;
-				}else if(nums > liwidths){
-					nums = liwidths;
-				}
-				console.log($(e.target).width());
-//				console.log(nums);
-				$(this).find("li.nav-special").css({"left":nums,"width":liwidth});
-			});
-		}
-	}
-	window.indexs = indexs;
-}(window);
-
-
-
-$(function(){
-	indexs.bindEvent();
-});
-
+		// css classes to apply
+		classes: {
+			// when element is initialised
+			initial: "headroom",
+			// when scrolling up
+			pinned: "headroom--pinned",
+			// when scrolling down
+			unpinned: "blog-header-unpinned",
+			// when above offset
+			top: "headroom--top",
+			// when below offset
+			notTop: "headroom--not-top",
+			// when at bottom of scoll area
+			bottom: "headroom--bottom",
+			// when not at bottom of scroll area
+			notBottom: "headroom--not-bottom"
+		},
+		// element to listen to scroll events on, defaults to `window`
+		scroller: window,
+		// callback when pinned, `this` is headroom object
+		onPin: function () {},
+		// callback when unpinned, `this` is headroom object
+		onUnpin: function () {},
+		// callback when above offset, `this` is headroom object
+		onTop: function () {},
+		// callback when below offset, `this` is headroom object
+		onNotTop: function () {},
+		// callback when at bottom of page, `this` is headroom object
+		onBottom: function () {},
+		// callback when moving away from bottom of page, `this` is headroom object
+		onNotBottom: function () {}
+	});
+	// initialise
+	headroom.init();
+}();

@@ -14,9 +14,14 @@ body {
 .blog-header {
     position: fixed;
     z-index: 2;
-    height: 40px;
-    line-height: 40px;
+    height: 38px;
+    line-height: 38px;
     background: rgba(0, 0, 0, 0.5);
+    transition: transform .2s linear;
+}
+
+.blog-header-unpinned {
+    transform: translateY(-100%);
 }
 
 .blog-header .blog-container {
@@ -24,8 +29,8 @@ body {
 }
 
 .blog-header .blog-container .blog-nav-collapse-btn {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -83,6 +88,11 @@ body {
     width: 85%;
     min-width: 1024px;
     margin: 10px auto;
+}
+
+.blog-content .blog-body .blog-main,
+.blog-content .blog-body .blog-sidebar {
+    transition: all 1s ease-out;
 }
 
 .blog-content .blog-body .blog-main .blog-article-list,
