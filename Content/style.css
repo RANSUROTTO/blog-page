@@ -162,6 +162,19 @@ body {
     max-height: 100%;
 }
 
+.blog-content .blog-body .blog-main .blog-article-list .blog-article-item .more {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.blog-content .blog-body .blog-main .blog-article-list .blog-article-item .detail {
+    background-color: #92c0ef;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 .blog-content .blog-body .blog-main .blog-article-list .blog-article-item .blog-article-content img {
     width: 100%;
     border-radius: 5px;
