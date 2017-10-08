@@ -1,0 +1,62 @@
+@charset "utf-8";
+body {
+    background-color: rgba(239, 239, 239, 1);
+}
+
+.blog-install {
+    float: none;
+    padding: 20px 0;
+}
+
+.layui-form {
+    padding: 10px 0;
+}
+
+.logo-wrapper {
+    /* background: url('Images/jingshenwuran.jpeg'); */
+    background-color: #3c8dbc;
+    padding: 25px;
+}
+
+.logo-wrapper .logo {
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 5rem;
+    font-weight: 500;
+}
+
+.container {
+    width: 100%;
+    clear: both;
+}
+
+form .content {
+    background-color: #ffffff;
+    padding: 20px;
+    font-size: 1.5rem;
+    display: table;
+}
+
+.panel {
+    margin-top: 30px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+.panel-title {
+    color: #868686;
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+
+.panel-body {
+    padding: 10px;
+}
+
+.form-label {
+    color: #8a8a8a;
+    padding-top: 7px;
+    font-weight: 600;
+}
