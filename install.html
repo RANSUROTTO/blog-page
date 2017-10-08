@@ -34,7 +34,7 @@
 
     <body class="am-g">
 
-        <div class="blog-install am-center am-u-lg-9 am-u-md-12  am-u-sm-12">
+        <div class="blog-install am-center am-u-lg-9 am-u-md-12 am-u-sm-12">
 
             <!-- language dropdown list -->
             <div class="container">
@@ -50,7 +50,7 @@
 
             <!-- logo wrapper -->
             <div class="container">
-                <div class="logo-wrapper">
+                <div class="logo-wrapper am-u-lg-12 am-u-lg-offset-0 am-u-md-10 am-u-md-offset-1 am-u-sm-10 am-u-sm-offset-1">
                     <div class="logo">
                         RANSUROTTO
                     </div>
@@ -58,42 +58,57 @@
             </div>
 
             <!-- from wrapper -->
-            <form action="install.html" method="post" class="container ">
-                <div class="content">
+            <form action="install.html" method="post" class="layui-form container">
+                <div class="content am-u-lg-12 am-u-lg-offset-0 am-u-md-10 am-u-md-offset-1 am-u-sm-10 am-u-sm-offset-1">
                     <p>完成这个向导，你必须知道如何连接数据库("即连接字符串").如有必要，请联系你的服务提供商。如果在本机或服务器上安装，你可能还需要一些管理员的信息 .</p>
-                    <div class="am-u-lg-offset-1 am-u-lg-10">
+                    <div class="am-u-lg-offset-1 am-u-lg-10 ">
                         <!-- adminstrator setting -->
                         <div class="panel">
-                            <div class="panel-title am-u-lg-4 am-text-right">
+                            <div class="panel-title am-u-lg-4 am-lg-text-right am-u-md-12">
                                 管理员信息
                             </div>
                             <div class="panel-body">
 
                                 <div class="container form-group">
-                                    <label for="email" class="am-u-lg-4 am-text-right form-label">管理员邮箱</label>
+                                    <label for="email" class="am-u-lg-4 am-lg-text-right form-label">管理员邮箱</label>
                                     <div class="am-u-lg-8">
-                                        <input name="email" type="text" id="email" class="layui-input" required lay-verify="required" />
+                                        <input name="email" type="text" id="email" class="layui-input" placeholder="administrator@admin.com" required lay-verify="required"
+                                        />
                                     </div>
                                 </div>
 
                                 <div class="container form-group">
-                                    <label for="password" class="am-u-lg-4 am-text-right form-label">管理员密码</label>
+                                    <label for="password" class="am-u-lg-4 am-lg-text-right form-label">管理员密码</label>
                                     <div class="am-u-lg-8">
-                                        <input name="password" type="text" id="password" class="layui-input" required lay-verify="required" />
+                                        <input name="password" type="password" id="password" class="layui-input" required lay-verify="required" />
                                     </div>
                                 </div>
 
                                 <div class="container form-group">
-                                    <label for="repassword" class="am-u-lg-4 am-text-right form-label">确认密码</label>
+                                    <label for="repassword" class="am-u-lg-4 am-lg-text-right form-label">确认密码</label>
                                     <div class="am-u-lg-8">
-                                        <input name="repassword" type="text" id="repassword" class="layui-input" required lay-verify="required" />
+                                        <input name="repassword" type="password" id="repassword" class="layui-input" required lay-verify="required" />
                                     </div>
                                 </div>
 
                             </div>
                         </div>
                         <!-- database setting -->
-                        <div class="panel"></div>
+                        <div class="panel">
+                            <div class="panel-title am-u-lg-4 am-lg-text-right am-u-md-12">
+                                数据库信息
+                            </div>
+                            <div class="panel-body">
+
+                                <div class="container form-group ">
+                                    <label for="database" class="am-u-lg-4 am-lg-text-right form-label">数据库</label>
+                                    <div class="am-u-lg-8">
+                                        <input type="radio" name="databse" value="mysql" title="使用MySQL（MySQL5.6+）数据库[推荐]" checked />
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </form>
