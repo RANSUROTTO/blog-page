@@ -70,24 +70,23 @@
                             <div class="panel-body">
 
                                 <div class="container form-group">
-                                    <label for="email" class="am-u-lg-4 am-lg-text-right form-label">管理员邮箱</label>
+                                    <label for="" class="am-u-lg-4 am-lg-text-right form-label">管理员邮箱</label>
                                     <div class="am-u-lg-8">
-                                        <input name="email" type="text" id="email" class="layui-input" placeholder="administrator@admin.com" required lay-verify="required"
-                                        />
+                                        <input type="text" class="layui-input" value="administrator@admin.com" required lay-verify="required" />
                                     </div>
                                 </div>
 
                                 <div class="container form-group">
-                                    <label for="password" class="am-u-lg-4 am-lg-text-right form-label">管理员密码</label>
+                                    <label for="" class="am-u-lg-4 am-lg-text-right form-label">管理员密码</label>
                                     <div class="am-u-lg-8">
-                                        <input name="password" type="password" id="password" class="layui-input" required lay-verify="required" />
+                                        <input type="password" class="layui-input" required lay-verify="required" />
                                     </div>
                                 </div>
 
                                 <div class="container form-group">
-                                    <label for="repassword" class="am-u-lg-4 am-lg-text-right form-label">确认密码</label>
+                                    <label for="" class="am-u-lg-4 am-lg-text-right form-label">确认密码</label>
                                     <div class="am-u-lg-8">
-                                        <input name="repassword" type="password" id="repassword" class="layui-input" required lay-verify="required" />
+                                        <input type="password" class="layui-input" required lay-verify="required" />
                                     </div>
                                 </div>
 
@@ -101,12 +100,68 @@
                             <div class="panel-body">
 
                                 <div class="container form-group ">
-                                    <label for="database" class="am-u-lg-4 am-lg-text-right form-label">数据库</label>
+                                    <label for="" class="am-u-lg-4 am-lg-text-right form-label">数据库</label>
                                     <div class="am-u-lg-8">
-                                        <input type="radio" name="databse" value="mysql" title="使用MySQL（MySQL5.6+）数据库[推荐]" checked />
+                                        <input type="radio" title="使用MySQL（MySQL5.6+）数据库[推荐]" checked />
+                                    </div>
+                                </div>
+                                <hr/>
+                                <div class="container form-group ">
+                                    <div class="am-u-lg-8 am-u-lg-offset-4">
+                                        <input type="checkbox" name="" title="如果不存在，创建数据库" lay-skin="primary">
                                     </div>
                                 </div>
 
+                                <div class="container form-group ">
+                                    <label for="" class="am-u-lg-4 am-lg-text-right form-label">连接字符串</label>
+                                    <div class="am-u-lg-8">
+                                        <div class="radio">
+                                            <input name="DataProvider" id="sqlconnectioninfo_values" type="radio" title="请输入连接字符串" value="sqlDatabaseInfo" lay-filter="DataProvider"
+                                                checked />
+                                        </div>
+                                        <div class="radio">
+                                            <input name="DataProvider" id="sqlconnectioninfo_raw" type="radio" title="输入原始连接字符串(高级)" value="sqlDatabaseConnectionString"
+                                                lay-filter="DataProvider" />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- sqlDatabaseInfo -->
+                                <div id="sqlDatabaseInfo" class="credentials">
+                                    <div class="container form-group">
+                                        <label for="" class="am-u-lg-4 am-lg-text-right form-label">MySQL实例</label>
+                                        <div class="am-u-lg-8">
+                                            <input type="text" class="layui-input" value="127.0.0.1:3306" required lay-verify=" required " />
+                                        </div>
+                                    </div>
+                                    <div class="container form-group">
+                                        <label for="" class="am-u-lg-4 am-lg-text-right form-label">数据库名称</label>
+                                        <div class="am-u-lg-8">
+                                            <input type="text" class="layui-input" value="ransurotto_db" required lay-verify=" required " />
+                                        </div>
+                                    </div>
+                                    <div class="container form-group">
+                                        <label for="" class="am-u-lg-4 am-lg-text-right form-label">MySQL用户名</label>
+                                        <div class="am-u-lg-8">
+                                            <input type="text" class="layui-input" required lay-verify=" required " />
+                                        </div>
+                                    </div>
+                                    <div class="container form-group">
+                                        <label for="" class="am-u-lg-4 am-lg-text-right form-label">MySQL密码</label>
+                                        <div class="am-u-lg-8">
+                                            <input type="text" class="layui-input" required lay-verify=" required " />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- sqlDatabaseConnectionString -->
+                                <div id="sqlDatabaseConnectionString" class="credentials" style="display:none;">
+                                    <div class="container form-group">
+                                        <label for="" class="am-u-lg-4 am-lg-text-right form-label">连接字符串</label>
+                                        <div class="am-u-lg-8">
+                                            <input type="text" class="layui-input" required lay-verify=" required " />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -115,15 +170,27 @@
         </div>
 
         <!-- scripts begin -->
-        <script src="Assets/amazeui-2.7.2/js/amazeui.js"></script>
-        <script src="Assets/layui-2.1.4/layui.js"></script>
+        <script src="Assets/layui-2.1.4/layui.js "></script>
         <script>
-            layui.use(['form'], function () {
+            layui.use(['form', 'jquery'], function () {
                 var form = layui.form;
+                var $ = layui.$;
 
                 //language dropdown list value change
                 form.on('select(language)', function (data) {
                     window.location.href = data.value;
+                });
+
+                //dataProvider radio value change
+                form.on('radio(DataProvider)', function (data) {
+                    var selectedProvider = $(data.elem).attr('id');
+                    if (selectedProvider == 'sqlconnectioninfo_values') {
+                        $('#sqlDatabaseInfo').show();
+                        $('#sqlDatabaseConnectionString').hide();
+                    } else if (selectedProvider == 'sqlconnectioninfo_raw') {
+                        $('#sqlDatabaseInfo').hide();
+                        $('#sqlDatabaseConnectionString').show();
+                    }
                 });
 
             });
