@@ -29,61 +29,61 @@
         <link rel="stylesheet" href="Assets/layui-2.1.4/css/layui.css">
         <link rel="stylesheet" href="Content/font-register.css">
         <link rel="stylesheet" href="Content/page/install.css">
+
+        <style>
+
+        </style>
         <!-- styles end -->
     </head>
 
-    <body class="am-g">
+    <body class="am-g am-padding-vertical">
 
-        <div class="blog-install am-center am-u-lg-9 am-u-md-12 am-u-sm-12">
+        <div class="am-u-lg-centered am-u-lg-9 am-u-md-12 am-u-sm-12">
 
             <!-- language dropdown list -->
-            <div class="container">
-                <div class="layui-form am-u-lg-offset-9 am-u-lg-3 am-u-md-4 am-u-md-offset-7 am-u-sm-10 am-u-sm-offset-1">
-                    <select name="language" lay-verify="required" lay-filter="language">
-                        <option value="install.html?language=zh-cn">简体中文</option>
-                        <option value="install.html?language=zh-tw">繁体中文</option>
-                        <option value="install.html?language=en">English</option>
-                        <option value="install.html?language=jp">日本語</option>
-                    </select>
-                </div>
+            <div class="layui-form am-text-sm am-padding-horizontal-0 am-padding-vertical-sm am-u-lg-offset-9 am-u-lg-3 am-u-md-4 am-u-md-offset-7 am-u-sm-10 am-u-sm-offset-1">
+                <select name="language" lay-verify="required" lay-filter="language">
+                    <option value="install.html?language=zh-cn">简体中文</option>
+                    <option value="install.html?language=zh-tw">繁体中文</option>
+                    <option value="install.html?language=en">English</option>
+                    <option value="install.html?language=jp">日本語</option>
+                </select>
             </div>
 
             <!-- logo wrapper -->
-            <div class="container">
-                <div class="logo-wrapper am-u-lg-12 am-u-lg-offset-0 am-u-md-10 am-u-md-offset-1 am-u-sm-10 am-u-sm-offset-1">
-                    <div class="logo">
-                        RANSUROTTO
-                    </div>
+            <div class="logo-wrapper am-u-lg-12 am-u-lg-offset-0 am-u-md-10 am-u-md-offset-1 am-u-sm-10 am-u-sm-offset-1">
+                <div class="logo">
+                    RANSUROTTO
                 </div>
             </div>
 
             <!-- from wrapper -->
-            <form action="install.html" method="post" class="container">
-                <div class="layui-form content am-u-lg-12 am-u-lg-offset-0 am-u-md-10 am-u-md-offset-1 am-u-sm-10 am-u-sm-offset-1">
+            <form action="install.html" method="post">
+                <div class="layui-form am-padding am-u-lg-12 am-u-lg-offset-0 am-u-md-10 am-u-md-offset-1 am-u-sm-10 am-u-sm-offset-1" style="background-color:#fff;" >
                     <p>完成这个向导，你必须知道如何连接数据库("即连接字符串").如有必要，请联系你的服务提供商。如果在本机或服务器上安装，你可能还需要一些管理员的信息 .</p>
                     <div class="am-u-lg-offset-1 am-u-lg-10 ">
                         <!-- adminstrator setting -->
-                        <div class="panel">
-                            <div class="panel-title am-u-lg-4 am-lg-text-right am-u-md-12">
+                        <div class="am-margin-top-xl">
+                            <div class="panel-title am-text-xl am-margin-bottom-sm am-u-lg-4 am-lg-text-right am-u-md-12">
                                 管理员信息
                             </div>
-                            <div class="panel-body">
+                            <div class="am-padding-sm">
 
-                                <div class="container form-group">
+                                <div class="form-group am-margin-bottom">
                                     <label for="" class="am-u-lg-4 am-lg-text-right form-label">管理员邮箱</label>
                                     <div class="am-u-lg-8">
                                         <input type="text" class="layui-input" value="administrator@admin.com" required lay-verify="required" />
                                     </div>
                                 </div>
 
-                                <div class="container form-group">
+                                <div class="form-group am-margin-bottom">
                                     <label for="" class="am-u-lg-4 am-lg-text-right form-label">管理员密码</label>
                                     <div class="am-u-lg-8">
                                         <input type="password" class="layui-input" required lay-verify="required" />
                                     </div>
                                 </div>
 
-                                <div class="container form-group">
+                                <div class="form-group am-margin-bottom">
                                     <label for="" class="am-u-lg-4 am-lg-text-right form-label">确认密码</label>
                                     <div class="am-u-lg-8">
                                         <input type="password" class="layui-input" required lay-verify="required" />
@@ -93,26 +93,26 @@
                             </div>
                         </div>
                         <!-- database setting -->
-                        <div class="panel">
-                            <div class="panel-title am-u-lg-4 am-lg-text-right am-u-md-12">
+                        <div class="am-margin-top-xl">
+                            <div class="panel-title am-text-xl am-margin-bottom-sm am-u-lg-4 am-lg-text-right am-u-md-12">
                                 数据库信息
                             </div>
-                            <div class="panel-body">
+                            <div class="am-padding-sm">
 
-                                <div class="container form-group ">
+                                <div class="form-group am-margin-bottom">
                                     <label for="" class="am-u-lg-4 am-lg-text-right form-label">数据库</label>
                                     <div class="am-u-lg-8">
                                         <input type="radio" title="使用MySQL（MySQL5.6+）数据库[推荐]" checked />
                                     </div>
                                 </div>
                                 <hr/>
-                                <div class="container form-group ">
+                                <div class="form-group am-margin-bottom">
                                     <div class="am-u-lg-8 am-u-lg-offset-4">
                                         <input type="checkbox" name="" title="如果不存在，创建数据库" lay-skin="primary">
                                     </div>
                                 </div>
 
-                                <div class="container form-group ">
+                                <div class="form-group am-margin-bottom">
                                     <label for="" class="am-u-lg-4 am-lg-text-right form-label">连接字符串</label>
                                     <div class="am-u-lg-8">
                                         <div class="radio">
@@ -128,25 +128,25 @@
 
                                 <!-- sqlDatabaseInfo -->
                                 <div id="sqlDatabaseInfo" class="credentials">
-                                    <div class="container form-group">
+                                    <div class="form-group am-margin-bottom">
                                         <label for="" class="am-u-lg-4 am-lg-text-right form-label">MySQL实例</label>
                                         <div class="am-u-lg-8">
                                             <input type="text" class="layui-input" value="127.0.0.1:3306" required lay-verify=" required " />
                                         </div>
                                     </div>
-                                    <div class="container form-group">
+                                    <div class="form-group am-margin-bottom">
                                         <label for="" class="am-u-lg-4 am-lg-text-right form-label">数据库名称</label>
                                         <div class="am-u-lg-8">
                                             <input type="text" class="layui-input" value="ransurotto_db" required lay-verify=" required " />
                                         </div>
                                     </div>
-                                    <div class="container form-group">
+                                    <div class="form-group am-margin-bottom">
                                         <label for="" class="am-u-lg-4 am-lg-text-right form-label">MySQL用户名</label>
                                         <div class="am-u-lg-8">
                                             <input type="text" class="layui-input" required lay-verify=" required " />
                                         </div>
                                     </div>
-                                    <div class="container form-group">
+                                    <div class="form-group am-margin-bottom">
                                         <label for="" class="am-u-lg-4 am-lg-text-right form-label">MySQL密码</label>
                                         <div class="am-u-lg-8">
                                             <input type="text" class="layui-input" required lay-verify=" required " />
@@ -155,7 +155,7 @@
                                 </div>
                                 <!-- sqlDatabaseConnectionString -->
                                 <div id="sqlDatabaseConnectionString" class="credentials" style="display:none;">
-                                    <div class="container form-group">
+                                    <div class="form-group am-margin-bottom">
                                         <label for="" class="am-u-lg-4 am-lg-text-right form-label">连接字符串</label>
                                         <div class="am-u-lg-8">
                                             <input type="text" class="layui-input" required lay-verify=" required " />
@@ -163,7 +163,7 @@
                                     </div>
                                 </div>
 
-                                <div class="am-u-lg-12   am-text-center">
+                                <div class="am-u-lg-12 am-text-center">
                                     <button type="submit" class="am-btn am-btn-primary am-radius am-btn-xl">安装</button>
                                 </div>
 
@@ -172,6 +172,7 @@
                     </div>
                 </div>
             </form>
+
         </div>
 
         <!-- scripts begin -->
