@@ -27,12 +27,46 @@
         <!-- styles begin -->
         <link rel="stylesheet" href="Assets/amazeui-2.7.2/css/amazeui.css">
         <link rel="stylesheet" href="Assets/layui-2.1.4/css/layui.css">
-        <link rel="stylesheet" href="Content/font-register.css">
-        <link rel="stylesheet" href="Content/page/install.css">
 
         <style>
+            body {
+                background-color: rgba(239, 239, 239, 1);
+                font-size: 1.5rem;
+            }
 
+            .logo-wrapper {
+                /* background: url('Images/jingshenwuran.jpeg'); */
+                background-color: #3c8dbc;
+            }
+
+            .logo-wrapper .logo {
+                color: rgba(255, 255, 255, 1);
+                font-size: 5rem;
+                font-weight: 500;
+            }
+
+            .panel-title {
+                color: #868686;
+            }
+
+            .form-group {
+                display: table;
+                width: 100%;
+            }
+
+            .form-label {
+                color: #8a8a8a;
+                padding-top: 7px;
+            }
+
+            .credentials {
+                background: #eeeeee;
+                padding: 22px 10px 7px;
+                margin-bottom: 15px;
+                margin-top: 20px;
+            }
         </style>
+
         <!-- styles end -->
     </head>
 
@@ -51,15 +85,15 @@
             </div>
 
             <!-- logo wrapper -->
-            <div class="logo-wrapper am-u-lg-12 am-u-lg-offset-0 am-u-md-10 am-u-md-offset-1 am-u-sm-10 am-u-sm-offset-1">
-                <div class="logo">
+            <div class="logo-wrapper am-padding-lg am-u-lg-12 am-u-lg-offset-0 am-u-md-10 am-u-md-offset-1 am-u-sm-10 am-u-sm-offset-1">
+                <div class="logo am-text-center">
                     RANSUROTTO
                 </div>
             </div>
 
             <!-- from wrapper -->
             <form action="install.html" method="post">
-                <div class="layui-form am-padding am-u-lg-12 am-u-lg-offset-0 am-u-md-10 am-u-md-offset-1 am-u-sm-10 am-u-sm-offset-1" style="background-color:#fff;" >
+                <div class="layui-form am-padding am-u-lg-12 am-u-lg-offset-0 am-u-md-10 am-u-md-offset-1 am-u-sm-10 am-u-sm-offset-1" style="background-color:#fff;">
                     <p>完成这个向导，你必须知道如何连接数据库("即连接字符串").如有必要，请联系你的服务提供商。如果在本机或服务器上安装，你可能还需要一些管理员的信息 .</p>
                     <div class="am-u-lg-offset-1 am-u-lg-10 ">
                         <!-- adminstrator setting -->
