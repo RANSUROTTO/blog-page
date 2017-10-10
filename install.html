@@ -96,6 +96,7 @@
                 <div class="layui-form am-padding am-u-lg-12 am-u-lg-offset-0 am-u-md-10 am-u-md-offset-1 am-u-sm-10 am-u-sm-offset-1" style="background-color:#fff;">
                     <p>完成这个向导，你必须知道如何连接数据库("即连接字符串").如有必要，请联系你的服务提供商。如果在本机或服务器上安装，你可能还需要一些管理员的信息 .</p>
                     <div class="am-u-lg-offset-1 am-u-lg-10 ">
+
                         <!-- adminstrator setting -->
                         <div class="am-margin-top-xl">
                             <div class="panel-title am-text-xl am-margin-bottom-sm am-u-lg-4 am-lg-text-right am-u-md-12">
@@ -106,21 +107,21 @@
                                 <div class="form-group am-margin-bottom">
                                     <label for="" class="am-u-lg-4 am-lg-text-right form-label">管理员邮箱</label>
                                     <div class="am-u-lg-8">
-                                        <input type="text" class="layui-input" value="administrator@admin.com" required lay-verify="required" />
+                                        <input type="text" class="layui-input" value="administrator@admin.com" />
                                     </div>
                                 </div>
 
                                 <div class="form-group am-margin-bottom">
                                     <label for="" class="am-u-lg-4 am-lg-text-right form-label">管理员密码</label>
                                     <div class="am-u-lg-8">
-                                        <input type="password" class="layui-input" required lay-verify="required" />
+                                        <input type="password" class="layui-input" />
                                     </div>
                                 </div>
 
                                 <div class="form-group am-margin-bottom">
                                     <label for="" class="am-u-lg-4 am-lg-text-right form-label">确认密码</label>
                                     <div class="am-u-lg-8">
-                                        <input type="password" class="layui-input" required lay-verify="required" />
+                                        <input type="password" class="layui-input" />
                                     </div>
                                 </div>
 
@@ -133,6 +134,7 @@
 
                             </div>
                         </div>
+
                         <!-- database setting -->
                         <div class="am-margin-top-xl">
                             <div class="panel-title am-text-xl am-margin-bottom-sm am-u-lg-4 am-lg-text-right am-u-md-12">
@@ -172,34 +174,35 @@
                                     <div class="form-group am-margin-bottom">
                                         <label for="" class="am-u-lg-4 am-lg-text-right form-label">MySQL实例</label>
                                         <div class="am-u-lg-8">
-                                            <input type="text" class="layui-input" value="127.0.0.1:3306" required lay-verify=" required " />
+                                            <input type="text" class="layui-input" value="127.0.0.1:3306" />
                                         </div>
                                     </div>
                                     <div class="form-group am-margin-bottom">
                                         <label for="" class="am-u-lg-4 am-lg-text-right form-label">数据库名称</label>
                                         <div class="am-u-lg-8">
-                                            <input type="text" class="layui-input" value="ransurotto_db" required lay-verify=" required " />
+                                            <input type="text" class="layui-input" value="ransurotto_db" />
                                         </div>
                                     </div>
                                     <div class="form-group am-margin-bottom">
                                         <label for="" class="am-u-lg-4 am-lg-text-right form-label">MySQL用户名</label>
                                         <div class="am-u-lg-8">
-                                            <input type="text" class="layui-input" required lay-verify=" required " />
+                                            <input type="text" class="layui-input" />
                                         </div>
                                     </div>
                                     <div class="form-group am-margin-bottom">
                                         <label for="" class="am-u-lg-4 am-lg-text-right form-label">MySQL密码</label>
                                         <div class="am-u-lg-8">
-                                            <input type="text" class="layui-input" required lay-verify=" required " />
+                                            <input type="text" class="layui-input" />
                                         </div>
                                     </div>
                                 </div>
+
                                 <!-- sqlDatabaseConnectionString -->
                                 <div id="sqlDatabaseConnectionString" class="credentials" style="display:none;">
                                     <div class="form-group am-margin-bottom">
                                         <label for="" class="am-u-lg-4 am-lg-text-right form-label">连接字符串</label>
                                         <div class="am-u-lg-8">
-                                            <input type="text" class="layui-input" required lay-verify=" required " />
+                                            <input type="text" class="layui-input" />
                                         </div>
                                     </div>
                                 </div>
@@ -210,6 +213,7 @@
 
                             </div>
                         </div>
+
                     </div>
                 </div>
             </form>
