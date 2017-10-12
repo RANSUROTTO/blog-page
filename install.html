@@ -65,6 +65,35 @@
                 margin-bottom: 15px;
                 margin-top: 20px;
             }
+
+            .throbber {
+                display: none;
+            }
+
+            .throbber .curtain {
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #5e7b8c;
+                opacity: 0.9;
+                filter: alpha(opacity=90);
+            }
+
+            .throbber .curtain-content {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .throbber .curtain-content div {
+                text-align: center;
+                padding: 250px;
+                color: #FFF;
+            }
         </style>
 
         <!-- styles end -->
@@ -92,7 +121,7 @@
             </div>
 
             <!-- from wrapper -->
-            <form action="install.html" method="post">
+            <form action="install.html" method="post" class="am-cf">
                 <div class="layui-form am-padding am-u-lg-12 am-u-lg-offset-0 am-u-md-10 am-u-md-offset-1 am-u-sm-10 am-u-sm-offset-1" style="background-color:#fff;">
                     <p>完成这个向导，你必须知道如何连接数据库("即连接字符串").如有必要，请联系你的服务提供商。如果在本机或服务器上安装，你可能还需要一些管理员的信息 .</p>
                     <div class="am-u-lg-offset-1 am-u-lg-10 ">
@@ -157,11 +186,11 @@
                                 <div class="form-group am-margin-bottom">
                                     <label for="" class="am-u-lg-4 am-lg-text-right form-label">连接字符串</label>
                                     <div class="am-u-lg-8">
-                                        <div class="radio">
+                                        <div>
                                             <input name="DataProvider" id="sqlconnectioninfo_values" type="radio" title="请输入连接字符串" value="sqlDatabaseInfo" lay-filter="DataProvider"
                                                 checked />
                                         </div>
-                                        <div class="radio">
+                                        <div>
                                             <input name="DataProvider" id="sqlconnectioninfo_raw" type="radio" title="输入原始连接字符串(高级)" value="sqlDatabaseConnectionString"
                                                 lay-filter="DataProvider" />
                                         </div>
@@ -217,7 +246,25 @@
                 </div>
             </form>
 
+            <div class="am-text-center am-margin-vertical-sm">
+                <button type="submit" class="am-btn am-btn-default am-radius am-btn-lg" style="background:#fff;">重启安装</button>
+            </div>
+
         </div>
+
+        <div class="throbber">
+            <div class="curtain">
+            </div>
+            <div class="curtain-content">
+                <div>
+                    <h1 class="throbber-header am-text-xl">Loading...</h1>
+                    <p>
+                        <img src=".gif" alt="" />
+                    </p>
+                </div>
+            </div>
+        </div>
+
 
         <!-- scripts begin -->
         <script src="Assets/layui-2.1.4/layui.js "></script>
@@ -244,6 +291,22 @@
                 });
 
             });
+
+            function showThrobber(message) {
+                var $ = layui.$;
+                $('.throbber-header').html(message);
+                $(".throbber").fadeIn(500)
+            }
+
+            function showThrobberToTop(message) {
+
+                var $ = layui.$;
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 500);
+
+                showThrobber(message);
+            }
         </script>
         <!-- scripts end -->
 
