@@ -10,6 +10,30 @@
 
         <title>Login</title>
 
+        <!-- iCheck -->
+        <link href="Assets/adminex/js/iCheck/skins/minimal/minimal.css" rel="stylesheet">
+        <link href="Assets/adminex/js/iCheck/skins/minimal/red.css" rel="stylesheet">
+        <link href="Assets/adminex/js/iCheck/skins/minimal/green.css" rel="stylesheet">
+        <link href="Assets/adminex/js/iCheck/skins/minimal/blue.css" rel="stylesheet">
+        <link href="Assets/adminex/js/iCheck/skins/minimal/yellow.css" rel="stylesheet">
+        <link href="Assets/adminex/js/iCheck/skins/minimal/purple.css" rel="stylesheet">
+
+        <link href="Assets/adminex/js/iCheck/skins/square/square.css" rel="stylesheet">
+        <link href="Assets/adminex/js/iCheck/skins/square/red.css" rel="stylesheet">
+        <link href="Assets/adminex/js/iCheck/skins/square/green.css" rel="stylesheet">
+        <link href="Assets/adminex/js/iCheck/skins/square/blue.css" rel="stylesheet">
+        <link href="Assets/adminex/js/iCheck/skins/square/yellow.css" rel="stylesheet">
+        <link href="Assets/adminex/js/iCheck/skins/square/purple.css" rel="stylesheet">
+
+        <link href="Assets/adminex/js/iCheck/skins/flat/grey.css" rel="stylesheet">
+        <link href="Assets/adminex/js/iCheck/skins/flat/red.css" rel="stylesheet">
+        <link href="Assets/adminex/js/iCheck/skins/flat/green.css" rel="stylesheet">
+        <link href="Assets/adminex/js/iCheck/skins/flat/blue.css" rel="stylesheet">
+        <link href="Assets/adminex/js/iCheck/skins/flat/yellow.css" rel="stylesheet">
+        <link href="Assets/adminex/js/iCheck/skins/flat/purple.css" rel="stylesheet">
+
+
+        <!-- style -->
         <link href="Assets/adminex/css/style.css" rel="stylesheet">
         <link href="Assets/adminex/css/style-responsive.css" rel="stylesheet">
 
@@ -33,7 +57,13 @@
                 <div class="login-wrap">
                     <input type="text" class="form-control" placeholder="用户名" autofocus>
                     <input type="password" class="form-control" placeholder="密码">
-                    <input type="checkbox" value="remember-me"> 记住我
+                    <!-- <input type="checkbox" class="iCheck-helper" value="remember-me"> 记住我 -->
+
+                    <div class="flat-green checked" style="position: relative;">
+                        <input type="checkbox" checked="" style="position: absolute; opacity: 0;">
+                        <ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                    </div>
+                    <label>Green Checkbox </label>
 
                     <button class="btn btn-lg btn-login btn-block" type="submit">
                         <i class="fa fa-check"></i>
@@ -47,11 +77,20 @@
 
 
         <!-- Placed js at the end of the document so the pages load faster -->
-
-        <!-- Placed js at the end of the document so the pages load faster -->
         <script src="Assets/adminex/js/jquery-1.10.2.min.js"></script>
+        <script src="Assets/adminex/js/jquery-ui-1.9.2.custom.min.js"></script>
+        <script src="Assets/adminex/js/jquery-migrate-1.2.1.min.js"></script>
         <script src="Assets/adminex/js/bootstrap.min.js"></script>
         <script src="Assets/adminex/js/modernizr.min.js"></script>
+        <script src="Assets/adminex/js/jquery.nicescroll.js"></script>
+
+        <!-- icheck -->
+        <script src="Assets/adminex/js/iCheck/jquery.icheck.js"></script>
+        <script src="Assets/adminex/js/iCheck-init.js"></script>
+
+        <!-- scripts -->
+        <script src="Assets/adminex/js/scripts.js"></script>
+
 
     </body>
 
