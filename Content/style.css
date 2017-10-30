@@ -39,6 +39,7 @@ body {
 }
 
 .blog-header .blog-container .blog-nav-title {
+    margin: 0;
     text-align: center;
     display: none;
     visibility: hidden;
