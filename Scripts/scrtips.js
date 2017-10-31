@@ -2,7 +2,6 @@ var THEPAGE = {
 
 	init: function () {
 		THEPAGE.initHeadroom();
-		THEPAGE.initScrollbar();
 	},
 
 	initHeadroom: function () {
@@ -55,11 +54,6 @@ var THEPAGE = {
 		// initialise
 		headroom.init();
 	},
-
-	initScrollbar: function () {
-
-
-	}
 
 };
 $(function () {
