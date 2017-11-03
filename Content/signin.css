@@ -1,3 +1,8 @@
+body {
+    background-color: #eee;
+    font-family: HiraginoSans-W3, "Hiragino Kaku Gothic Pro";
+}
+
 .slide {
     left: 0;
     right: 0;
@@ -164,7 +169,6 @@
 }
 
 .footer .footer-item a {
-    font-family: HiraginoSans-W3, "Hiragino Kaku Gothic Pro";
     display: inline-block;
     width: 100%;
     color: rgba(255, 255, 255, 0.5);
@@ -202,6 +206,10 @@
     cursor: default;
 }
 
+.footer .dropdown:hover .menu {
+    display: block;
+}
+
 .footer .dropdown .menu .item {
     padding: 2px 10px;
     color: #fff;
@@ -228,4 +236,33 @@
     width: 10px;
     height: 100%;
     background-image: url(3a04889….svg);
+}
+
+
+/*
+ * >=0px
+ * <=540px
+ */
+
+@media screen and (min-width:0px) and (max-width:540px) {
+    .signin-form {
+        margin-top: 10px;
+        width: 310px;
+        background-color: #eee;
+    }
+    .footer .dropdown {
+        float: right;
+    }
+}
+
+
+/*
+ * >=0px
+ * <=1024px
+ */
+
+@media screen and (min-width:0px) and (max-width:1024px) {
+    .slide {
+        display: none;
+    }
 }
