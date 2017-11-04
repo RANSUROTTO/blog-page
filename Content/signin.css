@@ -42,10 +42,22 @@ body {
     margin-bottom: 20px;
     overflow: hidden;
 }
-.signin-form .face-box .face-img{
-    border: 1px solid rgba(0,0,0,0.1);
-    border-radius:100%;
+
+.signin-form .face-box .face-img {
+    border: 1px solid rgba(200, 200, 200, 0.2);
+    border-radius: 100%;
+    background-image: url('../Images/face.jpg');
+    background-position: center;
+    background-size: contain;
+    height: 98px;
+    width: 98px;
+    transition: all .5s 0s;
 }
+
+.signin-form .face-box .face-img:hover {
+    transform: rotate(360deg);
+}
+
 .signin-form .input-field-group>.input-field:first-child {
     border-radius: 4px 4px 0 0;
 }
