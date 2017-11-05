@@ -252,17 +252,6 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer .dropdown .selected-item::after {
-    position: absolute;
-    right: 2px;
-    top: 0;
-    display: block;
-    width: 10px;
-    height: 100%;
-    /* background-image: url(3a04889….svg); */
-    content: '';
-}
-
 
 /*
  * >=0px
