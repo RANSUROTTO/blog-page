@@ -18,7 +18,7 @@ body {
     background-size: cover;
     background-position-x: 50%;
     background-position-y: 0;
-    background-image: url('../images/backgound.jpg');
+    background-image: url('../../images/backgound.jpg');
     opacity: 1;
 }
 
@@ -31,6 +31,14 @@ body {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 4px;
+}
+
+.signin-form__title {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    color: #757c80;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .signin-form .face-box {
@@ -46,10 +54,10 @@ body {
 .signin-form .face-box .face-img {
     width: 98px;
     height: 98px;
-    background-image: url('../Images/face.jpg');
+    background-image: url('../../Images/face.jpg');
     background-position: center;
     background-size: contain;
-    border: 1px solid rgba(200, 200, 200, 0.2);
+    border: 1px solid rgba(200, 200, 200, 0.5);
     border-radius: 100%;
     transition: all .5s 0s;
 }
@@ -133,19 +141,16 @@ body {
     text-decoration: underline;
 }
 
-.signup-form-nav .left,
-.signup-form-nav .right {
-    float: left;
-}
-
 .signup-form-nav .left {
     width: 50%;
     text-align: left;
+    float: left;
 }
 
 .signup-form-nav .right {
     width: 50%;
     text-align: right;
+    float: right;
 }
 
 .sns-login {
