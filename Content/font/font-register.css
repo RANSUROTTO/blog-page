@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "kilsonburg";
-    src: url('font/kilsonburg.ttf');
+    src: url('Kilsonburg/kilsonburg.ttf');
 }
 
 
@@ -10,12 +10,12 @@
 
 @font-face {
     font-family: "Lusitana-Bold";
-    src: url('font/Lusitana/Lusitana-Bold.ttf');
+    src: url('Lusitana/Lusitana-Bold.ttf');
 }
 
 @font-face {
     font-family: "Lusitana-Regular";
-    src: url('font/Lusitana/Lusitana-Regular.ttf');
+    src: url('Lusitana/Lusitana-Regular.ttf');
 }
 
 
@@ -23,7 +23,7 @@
 
 @font-face {
     font-family: "Monoton-Regular";
-    src: url('font/Monoton/Monoton-Regular.ttf');
+    src: url('Monoton/Monoton-Regular.ttf');
 }
 
 
@@ -31,12 +31,12 @@
 
 @font-face {
     font-family: "Syncopate-Bold";
-    src: url('font/Syncopate/Syncopate-Bold.ttf');
+    src: url('Syncopate/Syncopate-Bold.ttf');
 }
 
 @font-face {
     font-family: "Syncopate-Regular";
-    src: url('font/Syncopate/Syncopate-Regular.ttf');
+    src: url('Syncopate/Syncopate-Regular.ttf');
 }
 
 
@@ -44,5 +44,5 @@
 
 @font-face {
     font-family: "UnicaOne-Regular";
-    src: url('font/Unica_One/UnicaOne-Regular.ttf');
+    src: url('Unica_One/UnicaOne-Regular.ttf');
 }
